@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso frontend-developer</title>
+    <style>
+        *{
+            background: papayawhip;
+        }
+
+        div{
+            background: aquamarine;
+        }
+
+        .titulo{
+            color:antiquewhite;
+        }
+
+        a[href="https://www.google.com.co"]{
+            color: rgb(104, 22, 22);
+        }
+
+        .descendientes p {
+            color: lemonchiffon;
+            background: black;
+        }
+
+        div > .es {
+            background: brown;
+            color:yellowgreen;
+        }
+
+        .es {
+            background: yellow;
+        }
+
+        p + .elementoAdyacente{
+            color: blue;
+            background: firebrick;
+        }
+
+        div ~ .hermanos{
+            background: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>about us</li>
+            <li>contact us</li>
+        </ul>
+    </nav>
+    <section>
+        <div>
+            <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="perro" srcset="">
+        </div>
+        <div class="titulo">Hola mundo</div>
+        <div id="titulo2">Hola Diego</div>
+    </section>
+
+    <a href="https://www.google.com.co">Google</a>
+
+    <h2>Selectores combinadores</h2>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta sequi distinctio dolorem veritatis, nesciunt officiis est, nam sapiente accusamus doloribus facere animi nisi deserunt corrupti earum perspiciatis obcaecati? Ea.</p>
+    </div>
+
+    <div>
+        <div class="descendientes">
+            <p>Descendientes - Platzi</p>
+            <div class="es">Hijo directo</div>
+        </div>
+    </div>
+
+    <p class="hermanos">Selector de elemento hermano</p>
+
+    <section class="elementoAdyacente">
+       Esto es un elemento adyacente...
+    </section>
+
+</body>
+</html>
