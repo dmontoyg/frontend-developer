@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Pseudoclases y Pseudoelementos</title>
+    <style>
+        p{
+            color: salmon;
+            font-size: 20px;
+        }
+
+        p::first-letter{
+            color:black;
+        }
+
+        p::before{
+            content: "✔";
+        }
+
+        p:hover{
+            color: black;
+        }
+
+        div p:nth-child(2){
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hola Pseudoclases</p>
+        <p>Hola 2</p>
+        <p>Hola parte 3</p>
+    </div>
+</body>
+</html>
